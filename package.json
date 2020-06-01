@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/sachinkumar1997/test2/issues"
   },
-  "homepage": "https://github.com/sachinkumar1997/test2#readme"
+  "homepage": "https://github.com/sachinkumar1997/test2#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.0"
+  }
 }
