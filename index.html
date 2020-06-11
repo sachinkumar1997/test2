@@ -11,19 +11,24 @@
     <title>HelloFood</title>
 </head>         
 <body>
-    <nav class="navbar navbar-full navbar-dark navcolor fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm navcolor fixed-top">
         <div class="container">
             <div class="">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="more">
                      <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand ml-2" href="#">HelloFood</a>
+                <div class="collapse navbar-collapse" id="more">
+                    <ul class="navbar-nav mr-auto"> 
+                        <li class="nav-item active"><a class="nav-link" href="#">Login</a></li>
+                    </ul>
+                </div>
             </div>
                
             <div class="">
                 <form class="form-inline" action="search">
                     <input class="form-control mr-sm-2" type="text" name="search" id="search" placeholder="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
+                    <button class="btn btn-primary" type="submit">Search</button>
                 </form>
             </div>
             <div class="">
@@ -36,28 +41,28 @@
     <header class="jumbotron">
         <div class="container">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header colorhead">
                     <h2>Best of Country</h2>
                 </div>
-                <div class="card-body">
+                <div class="card-body colorbody">
                     <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active" role="tab" data-toggle="tab" href="#indian">Indian</a>
+                                    <a class="nav-link active text-success" role="tab" data-toggle="tab" href="#indian">Indian</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " role="tab" data-toggle="tab" href="#chinese">Chinese</a>
+                                    <a class="nav-link text-warning " role="tab" data-toggle="tab" href="#chinese">Chinese</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " role="tab" data-toggle="tab" href="#italian">Italian</a>
+                                    <a class="nav-link  text-danger" role="tab" data-toggle="tab" href="#italian">Italian</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " role="tab" data-toggle="tab" href="#american">American</a>
+                                    <a class="nav-link text-primary " role="tab" data-toggle="tab" href="#american">American</a>
                                 </li>
                      </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade show active" id="indian"> 
+                            <div role="tabpanel" class="tab-pane ind fade show active" id="indian"> 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 text-success">
                                         <h4 class="mt-1">Tandoori Chicken</h4>
                                         <p>Tandoori chicken is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor, a cylindrical clay oven. The dish originated from the Indian subcontinent and is popular in many other parts of the world.</p>
                                     </div>
@@ -72,7 +77,7 @@
 
                             <div role="tabpanel" class="tab-pane fade" id="chinese"> 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 text-warning">
                                         <h4 class="mt-1">Dumplings</h4>
                                         <p>Dumplings (饺子 jiǎozi) consist of minced meat and chopped vegetables wrapped in a thin dough skin. With a long history of more than 1,800 years, dumplings are a traditional food widely popular in North China.</p>
                                     </div>
@@ -87,7 +92,7 @@
 
                             <div role="tabpanel" class="tab-pane fade" id="italian"> 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 text-danger">
                                         <h4 class="mt-1">Bruschetta</h4>
                                         <p>An antipasto dish, bruschetta has grilled bread topped with veggies, rubbed garlic and tomato mix. A country bread sliced and topped with different toppings - the evergreen tomato-basil and an inventive mushroom-garlic. The classic Italian starter!</p>
                                     </div>
@@ -102,7 +107,7 @@
 
                             <div role="tabpanel" class="tab-pane fade" id="american"> 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 text-primary">
                                         <h4 class="mt-1">Fish Tacos</h4>
                                         <p>The classic fish taco grilled or fried white fish (such as cod or mahi-mahi), shredded cabbage, crema, pico de gallo, and a squirt of lime all nestled into a double layer of corn tortillas originated in Baja, California.</p>
                                     </div>
@@ -114,19 +119,273 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-            
-
-            
-            
-            
         </div>
         
     </header>
+
+    <div class="boxfirst">
+        <div class="container">
+            <div class="row row-content">
+                <div class="p-3 text-white font-weight-bold">
+                    <h2 >More from Indian</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-success "><h5>Chicken Tikka Masala</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/chickenTikka.webp" alt="chickenTikka">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-success"><h5>Rogan Josh</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/rogan-josh.webp" alt="rogan-josh">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-success"><h5>Malai Kofta</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/malai-kofta-vege-balls.webp" alt="malai-kofta-vege-balls">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-success"><h5>Chickpea Curry</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/chole-chickpea-curry.webp" alt="chole-chickpea-curry">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="boxsecond">
+        <div class="container">
+            <div class="row row-content">
+                <div class="p-3 text-white font-weight-bold">
+                    <h2 >More from Chinese</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-warning "><h5>Chow Mein</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/Chow_Mein.webp" alt="Chow_Mein">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-warning"><h5>Fried Shrimp</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/Fried_Shrimp.webp" alt="Fried_Shrimp">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-warning"><h5>Hotpot</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/Hotpot.webp" alt="Hotpot">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-warning"><h5>Ma Po Tofu</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/Ma-Po-Tofu.webp" alt="Ma-Po-Tofu">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="boxthird">
+        <div class="container">
+            <div class="row row-content">
+                <div class="p-3 text-white font-weight-bold">
+                    <h2 >More from Italian</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-info "><h5>Pizza Napoletana</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/margherita-pizza.jpg" alt="margherita-pizza">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-info"><h5>Ossobuco alla Milanese</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/ossobuco-alla-milanese.jpg" alt="ossobuco-alla-milanese">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-info"><h5>Panzanella</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/panzanella-salad.jpg" alt="panzanella-salad">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-info"><h5>Focaccia</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/focaccia-liguria.jpg" alt="focaccia-liguria">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="boxfourth">
+        <div class="container">
+            <div class="row row-content">
+                <div class="p-3 text-white font-weight-bold">
+                    <h2 >More from American</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-primary "><h5>Fried Green Tomatoes</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/alabama-fried.jpg" alt="alabama-fried">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-primary"><h5>Reindeer Sausage</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/alaska-reindeer-sausage.jpg" alt="alaska-reindeer-sausage">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-primary"><h5>Enchiladas</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/enchilada.jpg" alt="enchilada">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-header text-white bg-primary"><h5>Fried Catfish</h5></div>
+                            <div class="card-body">
+                                <div >
+                                    <img class="img-fluid" src="img/arkansas-fried-catfish-shutterstock.jpg" alt="arkansas-fried-catfish-shutterstock">
+                                </div>
+                                <div>
+                                    <button class="btn btn-block btn-danger" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <footer> 
 

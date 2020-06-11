@@ -3,8 +3,8 @@
 }
 
 .jumbotron{
-    background-color:#92FE9D ;
-    
+    background-color:#92FE9D;
+    margin-bottom: 0px;
 }
 
 body{
@@ -21,4 +21,33 @@ body{
     border-bottom: 1px solid #ddd ;
     border-right: 1px solid #ddd ;
     padding: 10px;
+}
+
+.row-content{
+    min-height: 300px;
+    margin: 0px auto;
+}
+
+.boxfirst{
+    background-color: #1e9600;
+    min-height: 400px;
+    padding: 0px 0px 50px 0px;
+}
+
+.boxsecond{
+    background-color: #dc2430;
+    min-height: 400px;
+    padding: 0px 0px 50px 0px;
+}
+
+.boxthird{
+    background-color: #d04ed6;
+    min-height: 400px;
+    padding: 0px 0px 50px 0px;
+}
+
+.boxfourth{
+    background-color: #004ff9;
+    min-height: 400px;
+    padding: 0px 0px 50px 0px;
 }
