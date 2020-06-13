@@ -13,29 +13,28 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm navcolor fixed-top">
         <div class="container">
-            <div class="">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="more">
-                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand ml-2" href="#">HelloFood</a>
-                <div class="collapse navbar-collapse" id="more">
-                    <ul class="navbar-nav mr-auto"> 
-                        <li class="nav-item active"><a class="nav-link" href="#">Login</a></li>
+    
+            <a class="navbar-brand mr-auto" href="#">HelloFood</a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+        
+            <div class="collapse navbar-collapse" id="Navbar">
+                
+                    <form class="form-inline ml-auto " action="search">
+                        <input class="form-control mr-sm-2" type="text" name="search" id="search" placeholder="Search">
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link btn btn-sm btn-info mr-md-2" href="#">login</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-sm btn-dark" href="#">Sign up</a></li>
                     </ul>
-                </div>
-            </div>
-               
-            <div class="">
-                <form class="form-inline" action="search">
-                    <input class="form-control mr-sm-2" type="text" name="search" id="search" placeholder="Search">
-                    <button class="btn btn-primary" type="submit">Search</button>
-                </form>
-            </div>
-            <div class="">
-                <a class=" btn btn-sm btn-info" href="#">login</a>
-                <a class="btn btn-sm btn-dark" href="#">Sign Up</a>
-            </div>
-        </div>
+                        
+            </div>  
+        
     </nav>
 
     <header class="jumbotron">
